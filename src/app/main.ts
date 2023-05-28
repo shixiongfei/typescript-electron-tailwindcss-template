@@ -8,7 +8,7 @@ const createWindow = () => {
   const window = new BrowserWindow({
     width,
     height,
-    icon: "./assets/icons/favicon.png",
+    icon: "./icons/favicon.png",
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,

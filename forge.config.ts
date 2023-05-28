@@ -7,7 +7,7 @@ import rendererConfig from "./webpack.renderer.config";
 export default {
   packagerConfig: {
     name: "Finworks",
-    icon: "./assets/icons/favicon",
+    icon: "./icons/favicon",
     ignore: [
       "dist",
       "src",
@@ -38,7 +38,7 @@ export default {
         entryPoints: [
           {
             name: "main_window",
-            html: "./assets/index.html",
+            html: "./src/app/index.html",
             js: "./src/app/renderer.ts",
             preload: {
               config: preloadConfig,
