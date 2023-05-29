@@ -3,7 +3,7 @@ import { plugins } from "./webpack.shared.plugins";
 
 export default {
   entry: {
-    preload: "./src/app/preload.ts",
+    preload: "./src/renderer/preload.ts",
   },
   module: {
     rules,

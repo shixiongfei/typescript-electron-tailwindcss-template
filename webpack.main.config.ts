@@ -3,7 +3,7 @@ import { plugins } from "./webpack.shared.plugins";
 
 export default {
   entry: {
-    index: "./src/app/main.ts",
+    index: "./src/main/main.ts",
   },
   module: {
     rules,

@@ -38,11 +38,11 @@ export default {
         entryPoints: [
           {
             name: "main_window",
-            html: "./src/app/index.html",
-            js: "./src/app/renderer.ts",
+            html: "./src/renderer/index.html",
+            js: "./src/renderer/renderer.ts",
             preload: {
               config: preloadConfig,
-              js: "./src/app/preload.ts",
+              js: "./src/renderer/preload.ts",
             },
           },
         ],
