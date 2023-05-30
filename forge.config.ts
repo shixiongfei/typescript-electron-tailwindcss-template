@@ -8,6 +8,7 @@ export default {
   packagerConfig: {
     name: "ElectronStartup",
     icon: "./icons/favicon",
+    asar: true,
     ignore: [
       "dist",
       "src",
