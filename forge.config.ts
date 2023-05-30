@@ -40,7 +40,7 @@ export default {
           {
             name: "main_window",
             html: "./src/renderer/index.html",
-            js: "./src/renderer/renderer.ts",
+            js: "./src/renderer/renderer.tsx",
             preload: {
               config: preloadConfig,
               js: "./src/renderer/preload.ts",

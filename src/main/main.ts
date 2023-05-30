@@ -8,6 +8,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width,
     height,
+    show: false,
     icon: "./icons/favicon.png",
     webPreferences: {
       nodeIntegration: true,
@@ -16,9 +17,14 @@ const createWindow = () => {
     },
   });
 
+  mainWindow.webContents.once("did-finish-load", () => {
+    mainWindow.maximize();
+    mainWindow.show();
+    mainWindow.focus();
+  });
+
   // mainWindow.webContents.openDevTools();
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
-  mainWindow.maximize();
 };
 
 app.whenReady().then(() => {
