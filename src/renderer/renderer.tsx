@@ -1,7 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Home from "./views/home";
+import Home from "./views/Home";
+import "./tailwind.css";
 import "./styles.css";
 
 const container = document.getElementById("root");
