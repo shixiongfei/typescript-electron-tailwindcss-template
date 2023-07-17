@@ -38,6 +38,11 @@ export default {
         config: rendererConfig,
         entryPoints: [
           {
+            name: "splash_window",
+            html: "./src/renderer/index.html",
+            js: "./src/renderer/splash.tsx",
+          },
+          {
             name: "main_window",
             html: "./src/renderer/index.html",
             js: "./src/renderer/renderer.tsx",
