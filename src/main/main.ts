@@ -3,8 +3,9 @@ import { Menu, MenuItemConstructorOptions } from "electron";
 
 const openSplashWindow = (onStartup: (splashWindow: BrowserWindow) => void) => {
   const splashWindow = new BrowserWindow({
-    width: 800,
-    height: 450,
+    width: 830,
+    height: 480,
+    useContentSize: true,
     show: false,
     transparent: true,
     frame: false,
